@@ -8,6 +8,19 @@
   <head>
 <!-- CX Tag - Library Load -->
 <script type="text/JavaScript" src="//d.oracleinfinity.io/infy/acs/account/8f18b0c3da08493b195f72e2f165b96a/js/furumizu_tag/odc.js"></script>
+    <script type="text/JavaScript">
+(function(){
+ 
+    // Declare Your Parameters (or leave object empty {})
+    var cxDataObject = {
+        "data.rsys.riid":"958493495"
+    }
+ 
+    // DO NOT EDIT BELOW THIS LINE - ORA.view()
+    window.ORA = window.ORA || {productReady: []};
+    ORA.productReady.push(['analytics', function(cxDataObject) {return function() {return ORA.view({"data": cxDataObject})}}(cxDataObject)]);
+})();
+</script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Apache2 Ubuntu Default Page: It works</title>
     <style type="text/css" media="screen">
@@ -192,18 +205,6 @@
     </style>
   </head>
   <body>
-<script type="text/JavaScript">
-(function(){
- 
-    // Declare Your Parameters (or leave object empty {})
-    var cxDataObject = {
-        "data.rsys.riid":"958493495",
-        "wt.product_name":"Infinity"
-    }
- 
-    // DO NOT EDIT BELOW THIS LINE - ORA.view()
-    window.ORA = window.ORA || {productReady: []};
-    ORA.productReady.push(['analytics', function(cxDataObject) {return function() {return ORA.view({"data": cxDataObject})}}(cxDataObject)]);
-})();
-</script></body>
+
+  </body>
 </html>
