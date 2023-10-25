@@ -20,6 +20,12 @@
     window.ORA = window.ORA || {productReady: []};
     ORA.productReady.push(['analytics', function(cxDataObject) {return function() {return ORA.view({"data": cxDataObject})}}(cxDataObject)]);
 })();
+  ORA.getClientID(function(clientID){
+alert(clientID);
+
+  }
+
+);
 </script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Apache2 Ubuntu Default Page: It works</title>
