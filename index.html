@@ -1,36 +1,343 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-<!-- CX Tag - Library Load -->
-<script type="text/JavaScript" src="//d.oracleinfinity.io/infy/acs/account/8f18b0c3da08493b195f72e2f165b96a/js/titan_tag/odc.js?_ora.config=maxymiser:test;analytics:test;recommender:test"></script>
-    <script type="text/JavaScript">
-          alert("getting client ID..");
-(function(){
- 
-    // Declare Your Parameters (or leave object empty {})
-    var cxDataObject = {
-        "data.rsys.riid":"958493495"
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Singtel Demo – Offers</title>
+
+  <!-- ===============================
+       BASIC PAGE STYLING (CSS)
+       =============================== -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
     }
- 
-    // DO NOT EDIT BELOW THIS LINE - ORA.view()
-    window.ORA = window.ORA || {productReady: []};
-    ORA.productReady.push(['analytics', function(cxDataObject) {return function() {return ORA.view({"data": cxDataObject})}}(cxDataObject)]);
-})();
-    if (!window.ORA) {
-				window.ORA = {
-				productReady: []
-				}
-				}
-				ORA.productReady.push(["common", function() {
-				ORA.setClientID("958493495");
- 
-			}])
-    ORA.getClientID(function(clientID){alert('CLIENTID: '+clientID);});
+
+    header {
+      background-color: #e60012; /* Singtel red */
+      color: white;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url("https://www.pelago.com/img/collections/Singtel/0712-0347_singtel_collections-banner_20240712-(1).jpg")
+        center/cover no-repeat;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      padding: 40px;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      max-width: 520px;
+      line-height: 1.2;
+      background: rgba(0,0,0,0.35);
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    .offers {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .offer-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .offer-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .offer-content {
+      padding: 20px;
+    }
+
+    .offer-content h3 {
+      margin-top: 0;
+    }
+
+    .offer-content p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .offer-content button {
+      margin-top: 10px;
+      padding: 10px 16px;
+      background-color: #e60012;
+      border: none;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .offer-content button:hover {
+      background-color: #c4000f;
+    }
+
+    footer {
+      background-color: #222;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+    }
+	 /* ===============================
+       SIGNUP FORM STYLES
+       =============================== */
+    .signup {
+      background: white;
+      margin: 40px;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .signup h3 {
+      margin-top: 0;
+      color: #e60012;
+    }
+
+    .signup label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .signup input,
+    .signup select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      font-size: 14px;
+    }
+
+    .signup button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #e60012;
+      color: white;
+      border: none;
+      font-size: 15px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+
+  <!-- ==================================================
+       ORACLE INFINITY TRACKING TAG
+       ================================================== -->
+  <script>
+    /*
+      Oracle Infinity tracking loader
+      Replace 1234567890 with your actual account ID
+    */
+	<!-- Oracle CX Tag - begin -->
+
+<!-- Oracle CX Tag - end -->
+    (function() {
+      var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+      g.async = true;
+      g.src = "https://d.oracleinfinity.io/infy/acs/account/8f18b0c3da08493b195f72e2f165b96a/js/anz_se_demo_tag/odc.js";
+      s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- ===============================
+       HEADER
+       =============================== -->
+  <header>
+    <h1>Singtel</h1>
+    <nav>
+      <a href="#">Mobile</a>
+      <a href="#">Broadband</a>
+      <a href="#">Roaming</a>
+      <a href="#">Support</a>
+    </nav>
+  </header>
+
+  <!-- ===============================
+       HERO SECTION
+       =============================== -->
+  <section class="hero">
+    <h2 style="margin-top:150px">Power your digital life with Singtel’s latest 5G and fibre plans</h2>
+  </section>
+
+  <!-- ===============================
+       OFFERS SECTION
+       =============================== -->
+  <section class="offers">
+
+    <!-- OFFER 1: 5G MOBILE -->
+    <div class="offer-card">
+      <img
+        src="https://i0.wp.com/thetechnovore.com/wp-content/uploads/2025/12/Lead-Image.jpg?w=1920&ssl=1"
+        alt="Singtel 5G Mobile"
+      />
+      <div class="offer-content">
+        <h3>5G Mobile Plans</h3>
+        <p>Experience ultra-fast 5G speeds with generous data and value-added perks.</p>
+        <button onclick="trackOfferClick('5g_mobile_plan')">
+          View Offer
+        </button>
+      </div>
+    </div>
+
+    <!-- OFFER 2: FIBRE BROADBAND -->
+    <div class="offer-card">
+      <img 
+        src="https://i0.wp.com/techielobang.com/blog/wp-content/uploads/2016/02/singtel-10gps-fibre-broadband.jpg?w=600&ssl=1"
+        alt="Singtel Fibre Broadband"
+      />
+      <div class="offer-content">
+        <h3>1Gbps Fibre Broadband</h3>
+        <p>Reliable, ultra-fast home internet with mesh Wi-Fi and entertainment add-ons.</p>
+        <button onclick="trackOfferClick('fibre_broadband')">
+          View Offer
+        </button>
+      </div>
+    </div>
+
+    <!-- OFFER 3: ROAMING -->
+    <div class="offer-card">
+      <img
+        src="https://static.wixstatic.com/media/ee8e9b_237aa69cec5c4436913c0e5774b07193~mv2.jpg/v1/fill/w_750,h_563,al_c,q_85,enc_avif,quality_auto/ee8e9b_237aa69cec5c4436913c0e5774b07193~mv2.jpg"
+        alt="Singtel ReadyRoam"
+      />
+      <div class="offer-content">
+        <h3>ReadyRoam Data Packs</h3>
+        <p>Stay connected overseas with affordable roaming across multiple countries.</p>
+        <button onclick="trackOfferClick('readyroam')">
+          View Offer
+        </button>
+      </div>
+    </div>
+
+  </section>
+<!-- ===============================
+     SIGNUP FORM SECTION
+     =============================== -->
+<section class="signup" id="signupForm">
+  <h3>Sign up for a Singtel Plan</h3>
+  <p>Select an offer and leave your details. Our team will contact you.</p>
+
+  <form onsubmit="handleSignup(event)">
+    <label for="product">Select Offer</label>
+    <select id="product" required>
+      <option value="">-- Choose a product --</option>
+      <option value="5g_mobile">5G Mobile Plan</option>
+      <option value="fibre_broadband">1Gbps Fibre Broadband</option>
+      <option value="readyroam">ReadyRoam Data Pack</option>
+    </select>
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" required />
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+  <!-- ===============================
+       FOOTER
+       =============================== -->
+  <footer>
+    © 2026 Singtel Demo Page | User behavior tracked via Oracle Infinity
+  </footer>
+
+ <!-- ==================================================
+     ORACLE INFINITY EVENT TRACKING
+     ================================================== -->
+<script>
+  function trackOfferClick(offer) {
+   // Declare Your Parameters (or leave object empty {})
+		var cxDataObject = {   
+			"wt.tx_e":"a",
+			"wt.event":"OfferClick",
+			"wt.offer":offer
+		}
+		 
+		// DO NOT EDIT BELOW THIS LINE - ORA.click()
+		window.ORA=window.ORA||{productReady:[]};ORA.productReady.push(['analytics',function(cxDataObject){return function(){return ORA.click({"data":cxDataObject})}}(cxDataObject)]);
+  }
+
+  function handleSignup(event) {
+    event.preventDefault();
+
+    var product = document.getElementById("product").value;
+	var u_email = document.getElementById("email").value;
+	var u_name = document.getElementById("name").value;
+    // Declare Your Parameters (or leave object empty {})
+		var cxDataObject = {   
+			"wt.tx_e":"a",
+			"wt.event":"SignUp",
+			"wt.username":u_name,
+			"wt.email":u_email,
+			"wt.product_name":product
+		}
+		 
+		// DO NOT EDIT BELOW THIS LINE - ORA.click()
+		window.ORA=window.ORA||{productReady:[]};ORA.productReady.push(['analytics',function(cxDataObject){return function(){return ORA.click({"data":cxDataObject})}}(cxDataObject)]);
+							
+
+    alert("Signup submitted for: " + product);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Declare Your Parameters (or leave object empty {})
+		var cxDataObject = {
+			"wt.event":"pageView",
+			"wt.product_name":"Singtel/home"
+		}
+		 
+		// DO NOT EDIT BELOW THIS LINE - ORA.view()
+		window.ORA=window.ORA||{productReady:[]};ORA.productReady.push(['analytics',function(cxDataObject){return function(){return ORA.view({"data":cxDataObject})}}(cxDataObject)]);
+							
+  });
 </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Apache2 Ubuntu Default Page: It works</title>
-  </head>
-  <body>
-<a href="https://faderalbank.co.in?mmcore.ids=1%3DR12345">Federal Bank</a>
-  </body>
+
+</body>
 </html>
