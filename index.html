@@ -290,7 +290,7 @@
  <div class="offer-card">
      
       <div class="offer-content">
-       <button onclick="trackOfferClick('ST_Gamification')">
+       <button onclick="personalizeRecommend('ST_Gamification')">
           I'm Feeling Lucky
         </button>
       </div>
@@ -309,6 +309,17 @@
 			"wt.tx_e":"a",
 			"data.ora.z_action":"OfferClick",
 			"wt.offer":offer
+		}
+		 
+		// DO NOT EDIT BELOW THIS LINE - ORA.click()
+		window.ORA=window.ORA||{productReady:[]};ORA.productReady.push(['analytics',function(cxDataObject){return function(){return ORA.click({"data":cxDataObject})}}(cxDataObject)]);
+  }
+
+	  function personalizeRecommend(action) {
+   // Declare Your Parameters (or leave object empty {})
+		var cxDataObject = {   
+			"wt.tx_e":"a",
+			"data.ora.z_action":action,
 		}
 		 
 		// DO NOT EDIT BELOW THIS LINE - ORA.click()
@@ -365,6 +376,7 @@ if (!custom_id) {
 </body>
 
 </html>
+
 
 
 
