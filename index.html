@@ -325,12 +325,22 @@
 
     alert("Signup submitted for: " + product);
   }
+let custom_id = sessionStorage.getItem('custom_id');
 
+if (!custom_id) {
+    // Generate random 8-digit number
+    custom_id = Math.floor(10000000 + Math.random() * 90000000);
+    sessionStorage.setItem('custom_id', custom_id);
+    console.log('New ID generated: ' + custom_id);
+} else {
+    console.log('Existing ID used: ' + custom_id);
+}
   document.addEventListener("DOMContentLoaded", function () {
     // Declare Your Parameters (or leave object empty {})
 		var cxDataObject = {
 			"data.ora.z_action":"pageView",
-			"data.ora.z_prd_name0":"Singtel/home"
+			"data.ora.z_prd_name0":"Singtel/home",
+			"data.wt.vtid":custom_id
 		}
 		 
 		// DO NOT EDIT BELOW THIS LINE - ORA.view()
@@ -342,4 +352,5 @@
 </body>
 
 </html>
+
 
