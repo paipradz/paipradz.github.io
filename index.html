@@ -277,6 +277,9 @@
 
     <label for="email">Email Address</label>
     <input type="email" id="email" required />
+	  
+	  <label for="mobile">Mobile Number</label>
+    <input type="mobile" id="mobile" required />
 
     <button type="submit">Submit</button>
   </form>
@@ -309,6 +312,7 @@
 
     var product = document.getElementById("product").value;
 	var u_email = document.getElementById("email").value;
+	  var u_mobile = document.getElementById("mobile").value;
 	var u_name = document.getElementById("name").value;
     // Declare Your Parameters (or leave object empty {})
 		var cxDataObject = {   
@@ -316,6 +320,7 @@
 			"data.ora.z_action":"SignUp",
 			"wt.username":u_name,
 			"data.ora.z_email":u_email,
+			"data.ora.z_mobile":u_mobile,
 			"data.ora.z_prd_name0":product
 		}
 		 
@@ -352,5 +357,6 @@ if (!custom_id) {
 </body>
 
 </html>
+
 
 
