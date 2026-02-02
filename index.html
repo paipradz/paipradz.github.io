@@ -8,6 +8,12 @@
        BASIC PAGE STYLING (CSS)
        =============================== -->
   <style>
+	  :root {
+  --singtel-red: #e60012;
+  --singtel-black: #000000;
+  --singtel-white: #ffffff;
+  --singtel-gray: #f4f4f4;
+}
 	/* Button */
 .open-popup-btn {
   background: var(--singtel-red);
@@ -377,7 +383,7 @@ canvas {
         </button>
       </div>
     </div>
-	<button class="open-popup-btn" onclick="openPopup()">🎁 Reveal Offer</button>
+	<button  onclick="openPopup()">🎁 Reveal Offer</button>
 
 <!-- Popup -->
 <div class="popup-overlay" id="popup">
@@ -539,6 +545,7 @@ canvas.addEventListener("touchmove", scratch);
 </body>
 
 </html>
+
 
 
 
