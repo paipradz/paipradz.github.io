@@ -699,10 +699,17 @@ if(loc === "SG"){
   bannerSG.style.display = "block"; // default SG
 }
 
+window.dataLayer.forEach(function(element) {
+    if (element.hasOwnProperty('ext.geo.country')) {
+        alert(element.ext.geo.country);
+    }
+});
 </script>
+	
 </body>
 
 </html>
+
 
 
 
