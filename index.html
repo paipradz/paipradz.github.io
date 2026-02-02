@@ -13,6 +13,107 @@
   --singtel-black: #000000;
   --singtel-white: #ffffff;
   --singtel-gray: #f4f4f4;
+ --card-radius: 18px;
+}
+/* Banner wrapper */
+.geo-banner {
+  display: none;
+  max-width: 1100px;
+  margin: auto;
+  border-radius: var(--card-radius);
+  padding: 40px;
+  color: white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative background pattern */
+.geo-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.08), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(255,255,255,0.06), transparent 40%);
+  pointer-events: none;
+}
+
+/* Banner types */
+.banner-sg {
+  background: linear-gradient(135deg, #e60012, #b8000e);
+}
+
+.banner-in {
+  background: linear-gradient(135deg, #000, #2b2b2b);
+}
+
+/* Layout */
+.banner-inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Text */
+.banner-text h1 {
+  font-size: 34px;
+  margin: 0;
+}
+
+.banner-text p {
+  font-size: 17px;
+  opacity: 0.9;
+  margin: 12px 0 24px;
+}
+
+/* CTA */
+.banner-cta {
+  display: inline-block;
+  background: white;
+  color: var(--singtel-red);
+  padding: 14px 26px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Visual card */
+.banner-visual {
+  background: rgba(255,255,255,0.12);
+  border-radius: 16px;
+  padding: 30px;
+  backdrop-filter: blur(6px);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
+  text-align: center;
+}
+
+/* Icon */
+.banner-visual svg {
+  width: 70px;
+  height: 70px;
+  fill: white;
+  opacity: 0.9;
+}
+
+.banner-visual h3 {
+  margin: 16px 0 6px;
+}
+
+.banner-visual span {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .banner-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
 	/* Button */
 .open-popup-btn {
@@ -344,6 +445,46 @@ canvas {
     </div>
 
   </section>
+
+<!-- 🇸🇬 Singapore Banner -->
+<section id="banner-sg" class="geo-banner banner-sg">
+  <div class="banner-inner">
+    <div class="banner-text">
+      <h1>Exclusive Deals for Singapore</h1>
+      <p>Enjoy priority Singtel plans, faster connectivity, and special rewards.</p>
+      <a href="#" class="banner-cta">View Singapore Plans</a>
+    </div>
+
+    <div class="banner-visual">
+      <!-- Simple SVG Graphic -->
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zm0 7L2 14l10 5 10-5-10-5z"/>
+      </svg>
+      <h3>5G Ready</h3>
+      <span>Ultra-fast & reliable</span>
+    </div>
+  </div>
+</section>
+
+<!-- 🇮🇳 India Banner -->
+<section id="banner-in" class="geo-banner banner-in">
+  <div class="banner-inner">
+    <div class="banner-text">
+      <h1>International & Roaming Offers</h1>
+      <p>Stay connected in India with affordable roaming and data packs.</p>
+      <a href="#" class="banner-cta">Explore India Offers</a>
+    </div>
+
+    <div class="banner-visual">
+      <svg viewBox="0 0 24 24">
+        <path d="M21 16V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2zm-2 0H5V8h14v8z"/>
+      </svg>
+      <h3>Roam Smart</h3>
+      <span>No bill shock</span>
+    </div>
+  </div>
+</section>
+
 <!-- ===============================
      SIGNUP FORM SECTION
      =============================== -->
@@ -543,9 +684,25 @@ canvas.addEventListener("touchstart", () => isScratching = true);
 canvas.addEventListener("touchend", () => isScratching = false);
 canvas.addEventListener("touchmove", scratch);
 </script>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const loc = params.get("loc");
+
+const bannerSG = document.getElementById("banner-sg");
+const bannerIN = document.getElementById("banner-in");
+
+if (loc === "IN") {
+  bannerIN.style.display = "block";
+} 
+if(loc === "SG"){
+  bannerSG.style.display = "block"; // default SG
+}
+</script>
 </body>
 
 </html>
+
 
 
 
