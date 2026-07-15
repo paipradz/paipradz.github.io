@@ -1,0 +1,340 @@
+{
+  "portal": "IDFC FIRST Bank Careers",
+  "source_faq_reviewed": "https://careers.idfcfirst.bank.in/in/en/faq",
+  "generated_on": "2026-07-15",
+  "scope": "Additional candidate FAQs focused on joining dates, pre-boarding, documentation, background verification, first-day readiness, orientation, payroll, systems access, and onboarding support.",
+  "disclaimer": "These answers are general candidate-guidance content. Role-specific instructions in the latest official offer letter, candidate portal, or HR communication should take precedence.",
+  "faq_count": 30,
+  "faqs": [
+    {
+      "id": "joining-001",
+      "category": "Joining Date",
+      "question": "Where can I find my confirmed joining date?",
+      "answer": "Your confirmed joining date will be mentioned in your offer letter, joining communication, or candidate portal. If different dates appear in different communications, contact the recruiter or HR representative named in your latest email for confirmation.",
+      "keywords": [
+        "joining date",
+        "offer letter",
+        "candidate portal"
+      ]
+    },
+    {
+      "id": "joining-002",
+      "category": "Joining Date",
+      "question": "Can I request a change to my joining date?",
+      "answer": "You may submit a joining-date change request to your recruiter or HR representative, along with the reason and your preferred date. The request will be reviewed based on business requirements, role availability, and onboarding schedules, and is not confirmed until you receive written approval.",
+      "keywords": [
+        "reschedule joining",
+        "date change",
+        "extension"
+      ]
+    },
+    {
+      "id": "joining-003",
+      "category": "Joining Date",
+      "question": "What should I do if I cannot join on the confirmed date?",
+      "answer": "Inform your recruiter or HR representative as early as possible. Explain the reason, provide a realistic alternative date, and wait for written confirmation before making new travel, accommodation, or resignation-related arrangements.",
+      "keywords": [
+        "unable to join",
+        "joining delay",
+        "HR contact"
+      ]
+    },
+    {
+      "id": "joining-004",
+      "category": "Joining Date",
+      "question": "Will I receive a reminder before my joining date?",
+      "answer": "Pre-joining reminders may be sent by email, SMS, phone, or through the candidate portal. Continue checking your registered email address, including spam or junk folders, and keep your phone number updated.",
+      "keywords": [
+        "joining reminder",
+        "email",
+        "SMS"
+      ]
+    },
+    {
+      "id": "joining-005",
+      "category": "Joining Date",
+      "question": "How will I know whether my joining is virtual, at a branch, or at an office location?",
+      "answer": "The reporting mode and location will be shared in your joining instructions or by the HR team. Do not assume that the interview location, job location, and onboarding venue are the same unless this is explicitly confirmed.",
+      "keywords": [
+        "virtual joining",
+        "branch joining",
+        "office location"
+      ]
+    },
+    {
+      "id": "preboarding-001",
+      "category": "Pre-boarding",
+      "question": "What is pre-boarding and when does it begin?",
+      "answer": "Pre-boarding is the period between accepting the offer and formally joining. During this stage, you may be asked to complete profile details, upload documents, finish verification steps, review policies, or complete assigned forms before your first day.",
+      "keywords": [
+        "pre-boarding",
+        "before joining",
+        "candidate tasks"
+      ]
+    },
+    {
+      "id": "preboarding-002",
+      "category": "Pre-boarding",
+      "question": "How do I access the pre-boarding or onboarding portal?",
+      "answer": "Use the secure link and login instructions sent to your registered email address or mobile number. For security, avoid using links forwarded by unknown senders and verify that the communication is from an authorized IDFC FIRST Bank recruitment or HR channel.",
+      "keywords": [
+        "onboarding portal",
+        "login link",
+        "secure access"
+      ]
+    },
+    {
+      "id": "preboarding-003",
+      "category": "Pre-boarding",
+      "question": "What should I do if my onboarding portal link has expired?",
+      "answer": "Use the resend or regenerate option if it is available. If that does not work, contact the recruiter, HR representative, or support contact mentioned in the onboarding communication and include a screenshot of the error without sharing passwords or one-time codes.",
+      "keywords": [
+        "expired link",
+        "portal access",
+        "technical support"
+      ]
+    },
+    {
+      "id": "preboarding-004",
+      "category": "Pre-boarding",
+      "question": "Can I save an incomplete onboarding form and finish it later?",
+      "answer": "This depends on the form or portal workflow. Look for a save-as-draft option before exiting. If no such option is shown, keep the required information ready and complete the form in one session to avoid losing entered data.",
+      "keywords": [
+        "save draft",
+        "onboarding form",
+        "incomplete form"
+      ]
+    },
+    {
+      "id": "documents-001",
+      "category": "Documents",
+      "question": "Which documents may be required before joining?",
+      "answer": "The exact checklist will be shared in your onboarding communication and may vary by role. Commonly requested items can include identity and address proof, educational records, employment records, photographs, tax or payroll details, and other documents needed for verification or statutory compliance.",
+      "keywords": [
+        "document checklist",
+        "identity proof",
+        "education records"
+      ]
+    },
+    {
+      "id": "documents-002",
+      "category": "Documents",
+      "question": "In which file format should I upload my documents?",
+      "answer": "Follow the format and file-size limits shown in the onboarding portal. PDF, JPG, or PNG may be accepted for different document types. Upload clear, complete, readable files and avoid password-protected documents unless specifically requested.",
+      "keywords": [
+        "file format",
+        "PDF",
+        "document upload"
+      ]
+    },
+    {
+      "id": "documents-003",
+      "category": "Documents",
+      "question": "What should I do if my name differs across my documents?",
+      "answer": "Inform the HR or verification team before submitting the documents. You may be asked for supporting proof that explains the difference, such as a name-change document, marriage certificate, affidavit, or another applicable record.",
+      "keywords": [
+        "name mismatch",
+        "document discrepancy",
+        "verification"
+      ]
+    },
+    {
+      "id": "documents-004",
+      "category": "Documents",
+      "question": "Can I submit a provisional certificate if my final degree certificate is not available?",
+      "answer": "Submit the document requested in your checklist. If the final certificate is unavailable, contact the HR or verification team to ask whether a provisional certificate, marksheets, or another temporary record can be accepted for your role.",
+      "keywords": [
+        "provisional certificate",
+        "degree certificate",
+        "education proof"
+      ]
+    },
+    {
+      "id": "documents-005",
+      "category": "Documents",
+      "question": "What should I do if I do not yet have my relieving or experience letter?",
+      "answer": "Notify your recruiter or HR representative and share the expected availability date. The team will advise whether an alternative document can be provided temporarily and whether the pending document must be submitted after joining.",
+      "keywords": [
+        "relieving letter",
+        "experience letter",
+        "pending document"
+      ]
+    },
+    {
+      "id": "verification-001",
+      "category": "Background Verification",
+      "question": "When does background verification begin?",
+      "answer": "Background verification may begin after offer acceptance, during pre-boarding, or after joining, depending on the role and process. Complete all requests accurately and within the specified deadline to prevent avoidable delays.",
+      "keywords": [
+        "background verification",
+        "BGV",
+        "offer acceptance"
+      ]
+    },
+    {
+      "id": "verification-002",
+      "category": "Background Verification",
+      "question": "How can I check whether my background verification is complete?",
+      "answer": "Check the status displayed in the candidate or onboarding portal, if available. You may also receive an email requesting additional information or confirming completion. For unresolved queries, contact the verification or HR contact listed in the communication.",
+      "keywords": [
+        "BGV status",
+        "verification complete",
+        "candidate portal"
+      ]
+    },
+    {
+      "id": "verification-003",
+      "category": "Background Verification",
+      "question": "What happens if additional information is required during verification?",
+      "answer": "You may receive a request for clarification or supporting documents. Respond through the authorized channel within the stated timeline and provide complete, accurate information. A request for clarification does not by itself mean that verification has failed.",
+      "keywords": [
+        "verification clarification",
+        "additional documents",
+        "BGV query"
+      ]
+    },
+    {
+      "id": "firstday-001",
+      "category": "First Day",
+      "question": "What should I carry on my first day?",
+      "answer": "Carry the items listed in your joining instructions. These may include original documents for verification, photocopies, photographs, bank or payroll information, and a copy of your offer or joining communication. Avoid carrying unnecessary original documents not requested by HR.",
+      "keywords": [
+        "first day",
+        "documents to carry",
+        "joining instructions"
+      ]
+    },
+    {
+      "id": "firstday-002",
+      "category": "First Day",
+      "question": "What time should I report on my first day?",
+      "answer": "Report at the time mentioned in your joining communication. If no reporting time is provided close to your joining date, contact the HR representative or reporting contact listed in your onboarding instructions.",
+      "keywords": [
+        "reporting time",
+        "first day",
+        "joining time"
+      ]
+    },
+    {
+      "id": "firstday-003",
+      "category": "First Day",
+      "question": "Whom should I contact when I arrive at the joining location?",
+      "answer": "Your joining communication should include an HR contact, reporting manager, coordinator, reception instruction, or venue contact. Save these details before travelling and contact the named person if you face difficulty entering or locating the venue.",
+      "keywords": [
+        "venue contact",
+        "reporting manager",
+        "HR coordinator"
+      ]
+    },
+    {
+      "id": "firstday-004",
+      "category": "First Day",
+      "question": "Is there a dress code for the first day?",
+      "answer": "Follow any dress-code guidance included in your joining communication. Where no specific guidance is provided, choose professional workplace attire appropriate for a banking environment and your assigned role or location.",
+      "keywords": [
+        "dress code",
+        "professional attire",
+        "first day"
+      ]
+    },
+    {
+      "id": "orientation-001",
+      "category": "Orientation",
+      "question": "What happens during the employee orientation programme?",
+      "answer": "Orientation generally introduces new employees to the Bank, workplace policies, expected conduct, information security, compliance requirements, employee resources, and role-specific next steps. The exact agenda may differ by role, business unit, and location.",
+      "keywords": [
+        "orientation",
+        "induction",
+        "new employee"
+      ]
+    },
+    {
+      "id": "orientation-002",
+      "category": "Orientation",
+      "question": "Is attendance at onboarding and induction sessions mandatory?",
+      "answer": "Complete all sessions marked as mandatory in your onboarding schedule. These may include compliance, policy, security, or role-readiness modules. Inform your manager or HR contact promptly if an unavoidable issue prevents attendance.",
+      "keywords": [
+        "mandatory induction",
+        "onboarding attendance",
+        "training"
+      ]
+    },
+    {
+      "id": "orientation-003",
+      "category": "Orientation",
+      "question": "Will I receive a schedule for my first week?",
+      "answer": "Your manager, HR representative, or onboarding coordinator may share a first-week schedule covering orientation, introductions, training, system setup, and role-specific activities. Check your email and onboarding portal regularly for updates.",
+      "keywords": [
+        "first week",
+        "onboarding schedule",
+        "training plan"
+      ]
+    },
+    {
+      "id": "systems-001",
+      "category": "Systems and Access",
+      "question": "When will I receive my employee ID and official system access?",
+      "answer": "Employee identification and system access are generally created as part of the joining process. Activation timing can vary depending on verification, role approvals, device readiness, and access requirements. Your manager or onboarding support team will guide you if access is pending.",
+      "keywords": [
+        "employee ID",
+        "system access",
+        "login credentials"
+      ]
+    },
+    {
+      "id": "systems-002",
+      "category": "Systems and Access",
+      "question": "What should I do if my official login or system access does not work?",
+      "answer": "Follow the IT support instructions provided during onboarding. Record the error message, confirm that you are using the correct username and approved device, and contact the designated help desk without sharing your password or one-time authentication code.",
+      "keywords": [
+        "IT support",
+        "login issue",
+        "system access"
+      ]
+    },
+    {
+      "id": "payroll-001",
+      "category": "Payroll Setup",
+      "question": "When should I submit my payroll and bank account details?",
+      "answer": "Submit payroll details when requested through the authorized onboarding or HR process. Ensure that the account holder name and other details match the supporting documents, and verify the information carefully before final submission.",
+      "keywords": [
+        "payroll",
+        "bank account",
+        "salary details"
+      ]
+    },
+    {
+      "id": "payroll-002",
+      "category": "Payroll Setup",
+      "question": "What should I do if I entered incorrect payroll or personal information?",
+      "answer": "Contact the HR or payroll support team immediately and request a correction through the approved process. Do not create multiple profiles or resubmit conflicting information unless instructed to do so.",
+      "keywords": [
+        "incorrect details",
+        "payroll correction",
+        "personal information"
+      ]
+    },
+    {
+      "id": "relocation-001",
+      "category": "Location and Relocation",
+      "question": "Can my joining location be different from my final work location?",
+      "answer": "Yes, the onboarding venue and assigned work location may differ. Use the location stated in the latest official joining communication and contact HR if the offer letter, portal, and joining instructions show conflicting locations.",
+      "keywords": [
+        "joining location",
+        "work location",
+        "onboarding venue"
+      ]
+    },
+    {
+      "id": "support-001",
+      "category": "Onboarding Support",
+      "question": "Whom should I contact for a joining or onboarding query?",
+      "answer": "Use the recruiter, HR representative, onboarding coordinator, or support contact named in your offer and onboarding communications. Include your full name, registered email address, job or requisition reference if available, and a concise description of the issue.",
+      "keywords": [
+        "onboarding help",
+        "HR contact",
+        "joining query"
+      ]
+    }
+  ]
+}
