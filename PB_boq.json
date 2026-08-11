@@ -1,0 +1,256 @@
+{
+  "inventoryOrganizations": [
+    {
+      "code": "NORTH-NOC",
+      "name": "North Network Operations and Logistics"
+    },
+    {
+      "code": "SOUTH-NOC",
+      "name": "South Network Operations and Logistics"
+    },
+    {
+      "code": "CENTRAL-WH",
+      "name": "Central Telecom Warehouse"
+    }
+  ],
+  "itemTemplates": [
+    {
+      "name": "Network Equipment",
+      "description": "Active telecom network equipment such as radios and baseband units"
+    },
+    {
+      "name": "Passive Infrastructure",
+      "description": "Passive telecom infrastructure such as antennas, fiber, and cables"
+    },
+    {
+      "name": "Site Material",
+      "description": "Civil, power, mounting, and installation material"
+    },
+    {
+      "name": "Network Site Assembly",
+      "description": "Configured telecom site or network rollout assembly"
+    }
+  ],
+  "items": [
+    {
+      "itemCode": "SITE-5G-URBAN-01",
+      "description": "5G Urban Macro Site Assembly",
+      "template": "Network Site Assembly",
+      "organizations": ["NORTH-NOC", "SOUTH-NOC"],
+      "uom": "Each",
+      "status": "Active",
+      "availableQuantity": 18,
+      "unitCost": 2850000
+    },
+    {
+      "itemCode": "BBU-5G-01",
+      "description": "5G Baseband Processing Unit",
+      "template": "Network Equipment",
+      "organizations": ["NORTH-NOC", "SOUTH-NOC", "CENTRAL-WH"],
+      "uom": "Each",
+      "status": "Active",
+      "availableQuantity": 42,
+      "unitCost": 450000
+    },
+    {
+      "itemCode": "RRU-OLD-1800",
+      "description": "Legacy 1800 MHz Remote Radio Unit",
+      "template": "Network Equipment",
+      "organizations": ["NORTH-NOC", "CENTRAL-WH"],
+      "uom": "Each",
+      "status": "Active",
+      "availableQuantity": 12,
+      "unitCost": 185000
+    },
+    {
+      "itemCode": "RRU-5G-3500",
+      "description": "5G 3500 MHz Remote Radio Unit",
+      "template": "Network Equipment",
+      "organizations": ["NORTH-NOC", "SOUTH-NOC", "CENTRAL-WH"],
+      "uom": "Each",
+      "status": "Active",
+      "availableQuantity": 96,
+      "unitCost": 265000
+    },
+    {
+      "itemCode": "ANT-4T4R-01",
+      "description": "4T4R Multi-band Sector Antenna",
+      "template": "Passive Infrastructure",
+      "organizations": ["NORTH-NOC", "SOUTH-NOC", "CENTRAL-WH"],
+      "uom": "Each",
+      "status": "Active",
+      "availableQuantity": 150,
+      "unitCost": 72500
+    },
+    {
+      "itemCode": "FIBER-SMF-100M",
+      "description": "Single Mode Fiber Cable, 100 Meter Drum",
+      "template": "Passive Infrastructure",
+      "organizations": ["NORTH-NOC", "SOUTH-NOC", "CENTRAL-WH"],
+      "uom": "Drum",
+      "status": "Active",
+      "availableQuantity": 310,
+      "unitCost": 12000
+    },
+    {
+      "itemCode": "CAB-OUTDOOR-01",
+      "description": "Outdoor Telecom Equipment Cabinet",
+      "template": "Site Material",
+      "organizations": ["NORTH-NOC", "SOUTH-NOC", "CENTRAL-WH"],
+      "uom": "Each",
+      "status": "Active",
+      "availableQuantity": 55,
+      "unitCost": 95000
+    },
+    {
+      "itemCode": "RECT-48V-01",
+      "description": "48V DC Rectifier and Power System",
+      "template": "Site Material",
+      "organizations": ["NORTH-NOC", "SOUTH-NOC", "CENTRAL-WH"],
+      "uom": "Each",
+      "status": "Active",
+      "availableQuantity": 47,
+      "unitCost": 165000
+    },
+    {
+      "itemCode": "BAT-LI-48V",
+      "description": "48V Lithium-Ion Backup Battery Module",
+      "template": "Site Material",
+      "organizations": ["NORTH-NOC", "SOUTH-NOC", "CENTRAL-WH"],
+      "uom": "Each",
+      "status": "Active",
+      "availableQuantity": 120,
+      "unitCost": 68000
+    },
+    {
+      "itemCode": "MOUNT-RRU-01",
+      "description": "Remote Radio Unit Mounting Kit",
+      "template": "Site Material",
+      "organizations": ["NORTH-NOC", "SOUTH-NOC", "CENTRAL-WH"],
+      "uom": "Each",
+      "status": "Active",
+      "availableQuantity": 500,
+      "unitCost": 8500
+    }
+  ],
+  "boqs": [
+    {
+      "boqNumber": "BOQ-5G-NORTH-1001",
+      "assemblyItem": "SITE-5G-URBAN-01",
+      "organization": "NORTH-NOC",
+      "revision": "A",
+      "status": "Approved",
+      "effectiveDate": "2026-08-01",
+      "projectReference": "North Circle 5G Urban Site Rollout",
+      "components": [
+        {
+          "lineNumber": 1,
+          "itemCode": "BBU-5G-01",
+          "description": "5G Baseband Processing Unit",
+          "quantity": 1,
+          "uom": "Each"
+        },
+        {
+          "lineNumber": 2,
+          "itemCode": "RRU-OLD-1800",
+          "description": "Legacy 1800 MHz Remote Radio Unit",
+          "quantity": 3,
+          "uom": "Each"
+        },
+        {
+          "lineNumber": 3,
+          "itemCode": "ANT-4T4R-01",
+          "description": "4T4R Multi-band Sector Antenna",
+          "quantity": 3,
+          "uom": "Each"
+        },
+        {
+          "lineNumber": 4,
+          "itemCode": "FIBER-SMF-100M",
+          "description": "Single Mode Fiber Cable, 100 Meter Drum",
+          "quantity": 2,
+          "uom": "Drum"
+        },
+        {
+          "lineNumber": 5,
+          "itemCode": "CAB-OUTDOOR-01",
+          "description": "Outdoor Telecom Equipment Cabinet",
+          "quantity": 1,
+          "uom": "Each"
+        },
+        {
+          "lineNumber": 6,
+          "itemCode": "RECT-48V-01",
+          "description": "48V DC Rectifier and Power System",
+          "quantity": 1,
+          "uom": "Each"
+        },
+        {
+          "lineNumber": 7,
+          "itemCode": "BAT-LI-48V",
+          "description": "48V Lithium-Ion Backup Battery Module",
+          "quantity": 4,
+          "uom": "Each"
+        },
+        {
+          "lineNumber": 8,
+          "itemCode": "MOUNT-RRU-01",
+          "description": "Remote Radio Unit Mounting Kit",
+          "quantity": 3,
+          "uom": "Each"
+        }
+      ]
+    }
+  ],
+  "sampleUploadedBOQ": {
+    "fileName": "North_Circle_5G_Site_Rollout_BOQ.xlsx",
+    "header": {
+      "assemblyItem": "SITE-5G-URBAN-01",
+      "organization": "NORTH-NOC",
+      "effectiveDate": "2026-09-01",
+      "projectReference": "North Circle 5G Capacity Expansion"
+    },
+    "components": [
+      {
+        "itemCode": "BBU-5G-01",
+        "quantity": 1,
+        "uom": "Each"
+      },
+      {
+        "itemCode": "RRU-5G-3500",
+        "quantity": 3,
+        "uom": "Each"
+      },
+      {
+        "itemCode": "ANT-4T4R-01",
+        "quantity": 3,
+        "uom": "Each"
+      },
+      {
+        "itemCode": "FIBER-SMF-100M",
+        "quantity": 2,
+        "uom": "Drum"
+      },
+      {
+        "itemCode": "CAB-OUTDOOR-01",
+        "quantity": 1,
+        "uom": "Each"
+      },
+      {
+        "itemCode": "RECT-48V-01",
+        "quantity": 1,
+        "uom": "Each"
+      },
+      {
+        "itemCode": "BAT-LI-48V",
+        "quantity": 4,
+        "uom": "Each"
+      },
+      {
+        "itemCode": "MOUNT-RRU-01",
+        "quantity": 3,
+        "uom": "Each"
+      }
+    ]
+  }
+}
